@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8/>
+        <title>Fortnite-API.de</title>
+
+        <link rel="stylesheet" type="text/css" href="https://fortnite-api.de/docs.css">
+    </head>
+    <body>
+        <div class="header">
+          <a class="text" href="">Fortnite-API.de</a>
+            <div class="header-right">
+              <a href="https://fortnite-api.de/">Home</a>
+              <a class="active" href="https://fortnite-api.de/docs">Docs</a>
+              <a href="https://status.fortnite-api.de/">Status</a>
+            </div>
+        </div>
+        <div class="doc">
+          <a>Cosmetics</a>
+        </div>
+        <div class="info">
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/cosmetics" target="_blank">http://fortnite-api.de/api/cosmetics</a></link><br>Returns a JSON of all cosmetics with information</a><br><hr>
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/cosmeticids" target="_blank">http://fortnite-api.de/api/cosmeticids</a><br>Returns a JSON of all cosmetic IDS<br><hr>
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/cosmetics/search" target="_blank">http://fortnite-api.de/api/cosmetics/search</a><br>Returns a JSON of specific cosmetics with information<br><br>
+          <u>Paramaters:</u><br>
+            <a style="color: #AF36E4;">?displayname=</a> (name of cosmetic)<br>
+            <a style="color: #AF36E4;">?description=</a> (description of cosmetic)<br>
+            <a style="color: #AF36E4;">?id=</a> (ID of cosmetic)<br>
+            <a style="color: #AF36E4;">?pakfile=</a> (pakfile of cosmetic)</a>
+          <br><hr>
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/cosmeticimage" target="_blank">http://fortnite-api.de/api/cosmeticimage</a><br>Returns an image with information of a cosmetic<br><br>
+          <u>Paramaters:</u><br>
+            <a style="color: #AF36E4;">?cosmeticid=</a> (ID of cosmetic)<br>
+            <a style="color: #AF36E4;">&featured=</a> (true or false)</a>
+          <br><hr>
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/cosmeticimage/description" target="_blank">http://fortnite-api.de/api/cosmeticimage/description</a><br>Returns an image with information of a cosmetic with a description<br><br>
+          <u>Paramaters:</u><br>
+            <a style="color: #AF36E4;">?cosmeticid=</a> (ID of cosmetic)<br>
+            <a style="color: #AF36E4;">&featured=</a> (true or false)</a>
+          <br>
+        </div>
+        <div class="doc" style="margin-top: 20px;">
+          <a>Extraction</a>
+        </div>
+        <div class="info">
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/extract/json" target="_blank">http://fortnite-api.de/api/extract/json</a></link><br>Returns a JSON with information of a path</a><br><br>
+          <u>Paramaters:</u><br>
+            <a style="color: #AF36E4;">?path=</a> (file path)</a>
+          <br><hr>
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/extract/texture" target="_blank">http://fortnite-api.de/api/extract/texture</a></link><br>Returns an image with the texture of a path</a><br><br>
+          <u>Paramaters:</u><br>
+            <a style="color: #AF36E4;">?path=</a> (file path)</a>
+          <br><hr>
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/extract/audio" target="_blank">http://fortnite-api.de/extract/audio</a></link><br>Returns an ogg with the sound of a path</a><br><br>
+          <u>Paramaters:</u><br>
+            <a style="color: #AF36E4;">?path=</a> (file path)</a>
+          <br>
+        </div>
+        <div class="doc" style="margin-top: 20px;">
+          <a>Information</a>
+        </div>
+        <div class="info">
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/brshop"target="_blank">https://fortnite-api.de/api/brshop</a></link><br>Returns a parsed JSON with information of the current BR shop</a><br><hr>
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/brstorefronts"target="_blank">https://fortnite-api.de/api/brstorefronts</a></link><br>Returns a JSON with information of the current BR shop directly from Epic</a><br><hr>
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/starterkits"target="_blank">https://fortnite-api.de/api/starterkits</a></link><br>Returns a JSON with information of the current starterkits</a><br><hr>
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/eventflags" target="_blank">http://fortnite-api.de/api/eventflags</a></link><br>Returns a JSON with information of the current eventflags</a><br><hr>
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/keychain" target="_blank">http://fortnite-api.de/api/keychain</a></link><br>Returns a JSON with information of the current keychain</a><br><hr>
+        </div>
+        <div class="doc" style="margin-top: 20px;">
+          <a>AES Keys</a>
+        </div>
+        <div class="info">
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/aeskeys"target="_blank">https://fortnite-api.de/api/aeskeys</a></link><br>Returns a JSON of the current AES keys along with the IDS associated with it</a><br><hr>
+          <a style="color: #26AB79;">GET <a href="https://fortnite-api.de/api/aeskeys/main"target="_blank">https://fortnite-api.de/api/aeskeys/main</a></link><br>Returns a JSON of the current main AES key</a><br>
+        </div>        <br><br><br>
+    </body>
+</html>
